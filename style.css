@@ -1,0 +1,238 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.5s;
+}
+
+/* Header Section */
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em; /* Smaller font size */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Reduced font size for nav links */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe0b2;
+}
+
+/* Main Section */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Section */
+#menu .menu-item {
+    display: inline-block;
+    margin: 20px;
+    width: 230px;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu .menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#menu img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#menu h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Slightly smaller */
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+#menu p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.order-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.order-control button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.order-control button:hover {
+    background-color: #ff3d3d;
+}
+
+.order-control .quantity {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+    color: #333;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff3d3d;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Order Summary */
+#order-summary {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #ff6f61;
+}
+
+#order-summary p {
+    font-weight: bold;
+}
+
+button#order-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button#order-btn:hover {
+    background-color: #ff3d3d;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, header, .menu-item, footer {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Customer Info Box */
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.customer-info label {
+    font-size: 1.2em;
+    color: #ff6f61;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.customer-info input {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.customer-info input:focus {
+    border-color: #ff3d3d;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.customer-info input::placeholder {
+    color: #999;
+}

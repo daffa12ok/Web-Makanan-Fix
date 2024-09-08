@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pameran Makanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Rumah Makan Azizah</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Selamat Datang di Rumah Makan Aziza</h2>
+        <p>Temukan makanan favoritmu disini.</p>
+        
+    </section>
+
+    <section id="menu">
+        <h2>Menu Kita</h2>
+            
+    <!-- Bakso -->
+    <div class="menu-item">
+        <img src="Bakso.jpg" alt="Bakso">
+        <h3>Bakso</h3>
+        <p>Makanan</p>
+        <p>Price: Rp 10.000</p>
+        <div class="order-control">
+            <button class="decrease">-</button>
+            <span class="quantity" id="quantity1">0</span>
+            <button class="increase">+</button>
+        </div>
+        <p>Total Price: Rp <span id="totalPrice1">0</span></p>
+    </div>
+
+    <!-- Mie Ayam -->
+    <div class="menu-item">
+        <img src="Mie Ayam_2.jpg" alt="Mie Ayam">
+        <h3>Mie Ayam</h3>
+        <p>Makanan</p>
+        <p>Price: Rp 12.000</p>
+        <div class="order-control">
+            <button class="decrease">-</button>
+            <span class="quantity" id="quantity2">0</span>
+            <button class="increase">+</button>
+        </div>
+        <p>Total Price: Rp <span id="totalPrice2">0</span></p>
+    </div>
+
+    <!-- Kebab -->
+    <div class="menu-item">
+        <img src="Kebab_1.jpg" alt="Kebab">
+        <h3>Kebab</h3>
+        <p>Makanan</p>
+        <p>Price: Rp 5.000</p>
+        <div class="order-control">
+            <button class="decrease">-</button>
+            <span class="quantity" id="quantity3">0</span>
+            <button class="increase">+</button>
+        </div>
+        <p>Total Price: Rp <span id="totalPrice3">0</span></p>
+    </div>
+
+    <!-- Es Teh -->
+    <div class="menu-item">
+        <img src="Es Teh.jpg" alt="Es Teh">
+        <h3>Es Teh</h3>
+        <p>Minuman</p>
+        <p>Harga: Rp 3.000</p>
+        <div class="order-control">
+            <button class="decrease">-</button>
+            <span class="quantity" id="quantity4">0</span>
+            <button class="increase">+</button>
+        </div>
+        <p>Total Price: Rp <span id="totalPrice4">0</span></p>
+    </div>
+
+    <!-- Buavita -->
+    <div class="menu-item">
+        <img src="Buavita_1.jpg" alt="Buavita">
+        <h3>Buavita</h3>
+        <p>Minuman</p>
+        <p>Price: Rp 7.000</p>
+        <div class="order-control">
+            <button class="decrease">-</button>
+            <span class="quantity" id="quantity5">0</span>
+            <button class="increase">+</button>
+        </div>
+        <p>Total Price: Rp <span id="totalPrice5">0</span></p>
+    </div>  
+    </section>
+
+    <section id="order-summary">
+        <h2>Rangkuman Pesanan</h2>
+        
+        <div class="customer-info">
+        <label for="customerName">Nama:</label>
+        <input type="text" id="customerName" placeholder="Masukkan Nama">
+        <label for="customerEmail">Alamat Email</label>
+        <input type="email" id="customerEmail" placeholder="Masukkan Alamat Email"> 
+            
+        <p>Total Harga Semua Pesanan: Rp <span id="grandTotal">0</span></p> <!-- Changed to IDR -->
+      </div>
+
+<button id="order-btn">Pesan Sekarang</button>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Nikmati pengalaman kuliner yang tak terlupakan bersama kami! Kami menyediakan berbagai pilihan makanan ringan yang menggugah selera, minuman segar yang menyegarkan, serta hidangan berat yang lezat dan memuaskan. Setiap sajian diracik dengan cinta dan bahan berkualitas, siap memanjakan lidah Anda. Bergabunglah dengan kami untuk merasakan kelezatan yang tak tertandingi!
+</p>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <p>WhatsApp: <a href="https://wa.me/6282337653775" target="_blank">Nur Azizah</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pameran Makanan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 .header-logo .logo {
-    width: 60px; /* Adjust the size of the logo */
+    width: 100px; /* Adjust the size of the logo */
     height: auto;
     margin-right: 15px; /* Space between logo and text */
 }

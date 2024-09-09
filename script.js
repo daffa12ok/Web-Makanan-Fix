@@ -103,11 +103,11 @@ function sendOrderToGoogleSheets(name, email, orders, total) {
         body: JSON.stringify(data)
     })
     .then(response => {
-        alert('Order has been sent successfully!');
+        alert('Pesanan telah berhasil dikirim!');
     })
     .catch(error => {
         console.error('Error sending data:', error);
-        alert('There was an error submitting your order.');
+        alert('Ada kesalahan saat mengirimkan pesanan Anda.');
     });
 }
 
@@ -134,7 +134,7 @@ document.getElementById('order-btn').addEventListener('click', function() {
 
     // Validate that the name and email are filled in
     if (customerName === "" || customerEmail === "") {
-        alert("Please enter your name and email.");
+        alert("Isi Terlebih Dahulu Nama dan Nomor Hp.");
         return;
     }
 

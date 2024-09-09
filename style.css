@@ -278,7 +278,7 @@ nav ul li a {
     font-size: 0.5em;
     padding: 10px 20px; /* Padding inside the box */
     border: 2px solid white; /* Create a white border around each item */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transition effects */
     display: inline-block; /* Make sure the box is applied around the text */
 }

@@ -257,3 +257,58 @@ section, header, .menu-item, footer {
 .customer-info input::placeholder {
     color: #999;
 }
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 20px; /* Add space between each navigation item */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px; /* Padding inside the box */
+    border: 2px solid white; /* Create a white border around each item */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    display: inline-block; /* Make sure the box is applied around the text */
+}
+
+/* Hover and Focus Effects */
+nav ul li a:hover {
+    background-color: white;
+    color: #ff6f61;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+    border-color: #ff6f61;
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+    background-color: white;
+    color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+/* Shadow Effect on Hover */
+nav ul li a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the items vertically on small screens */
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}

@@ -52,6 +52,27 @@ nav ul li a:hover {
     color: #ffe0b2;
 }
 
+/* Header Logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo .logo {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px; /* Space between logo and text */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
 /* Main Section */
 section {
     padding: 40px;

@@ -75,7 +75,7 @@ document.getElementById('order-btn').addEventListener('click', function() {
     }
 
     // Simulate sending order confirmation
-    alert(`Thank you, ${customerName}! Your order has been placed. A confirmation email will be sent to ${customerEmail}.`);
+    alert(`Terima Kasih, ${customerName}! Pesanan anda telah berhasil dilakukan. Jika ada yang ingin dipesan, lakukan pemesanan ulang.`);
     
     // Here you could integrate real email sending services like EmailJS or a backend.
 });
@@ -134,7 +134,7 @@ document.getElementById('order-btn').addEventListener('click', function() {
 
     // Validate that the name and email are filled in
     if (customerName === "" || customerEmail === "") {
-        alert("Isi Terlebih Dahulu Nama dan Nomor Hp.");
+        alert("Isi terlebih dahulu nama dan nomor Hp.");
         return;
     }
 
